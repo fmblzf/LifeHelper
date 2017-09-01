@@ -1,1 +1,1 @@
-include ':app', ':network', ':cardscan'
+include ':app', ':fmblzf-network', ':cardscan', ':mvp', ':fmblzf-picture', ':fmblzf-annotion'

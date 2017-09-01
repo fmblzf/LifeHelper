@@ -3,11 +3,12 @@ package com.fmblzf.lifehelper;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.ImageView;
 
 import com.fmblzf.lifehelper.model.NewInfo;
 import com.fmblzf.lifehelper.service.INewService;
-import com.fmblzf.retrofit.RetrofitUtils;
-import com.fmblzf.rxjava.FlowableManager;
+import com.fmblzf.network.retrofit.RetrofitUtils;
+import com.fmblzf.network.rxjava.FlowableManager;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -25,10 +26,18 @@ public class MainActivity extends AppCompatActivity {
 
     private final static String TAG = "MainActivity";
 
+    private ImageView imageView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.glide_layout);
+
+
+
+    }
+
+    public void init(){
         String url = "http://v.juhe.cn/";
         INewService service = RetrofitUtils.getInstance().createService(url, GsonConverterFactory.create() ,INewService.class);
         Flowable<JsonObject> jsonFlowable = service.getNew("top","dd7bba438f17877f6790d49087424418");
@@ -53,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG,"onComplete");
             }
         });
-
     }
+
 
     public static class JsonConvertClass implements FlowableManager.IConvertDataType<JsonObject,List<NewInfo>>{
 

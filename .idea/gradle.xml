@@ -10,7 +10,10 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/cardscan" />
-            <option value="$PROJECT_DIR$/network" />
+            <option value="$PROJECT_DIR$/fmblzf-annotion" />
+            <option value="$PROJECT_DIR$/fmblzf-network" />
+            <option value="$PROJECT_DIR$/fmblzf-picture" />
+            <option value="$PROJECT_DIR$/mvp" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -5,7 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/LifeHelper.iml" filepath="$PROJECT_DIR$/LifeHelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/cardscan/cardscan.iml" filepath="$PROJECT_DIR$/cardscan/cardscan.iml" />
-      <module fileurl="file://$PROJECT_DIR$/network/network.iml" filepath="$PROJECT_DIR$/network/network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fmblzf-annotion/fmblzf-annotion.iml" filepath="$PROJECT_DIR$/fmblzf-annotion/fmblzf-annotion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fmblzf-network/fmblzf-network.iml" filepath="$PROJECT_DIR$/fmblzf-network/fmblzf-network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fmblzf-picture/fmblzf-picture.iml" filepath="$PROJECT_DIR$/fmblzf-picture/fmblzf-picture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvp/mvp.iml" filepath="$PROJECT_DIR$/mvp/mvp.iml" />
     </modules>
   </component>
 </project>
