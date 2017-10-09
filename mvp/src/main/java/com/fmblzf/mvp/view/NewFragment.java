@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.fmblzf.mvp.R;
 import com.fmblzf.mvp.base.BaseFragment;
@@ -164,7 +165,7 @@ public class NewFragment extends BaseFragment implements IProgressView {
         public void initView(NewInfo newInfo){
             try {
                 CircularImageView circularImageView = NewsViewHolder.getViewById(this.itemView,R.id.item_icon);
-                Glide.with(instance).load(newInfo.getThumbnail_pic_s()).apply(RequestOptions.circleCropTransform().apply(RequestOptions.centerInsideTransform())).into(circularImageView);
+                Glide.with(instance).load(newInfo.getThumbnail_pic_s()).apply(RequestOptions.centerCropTransform()).apply(new RequestOptions().transform(new RoundedCorners(10))).into(circularImageView);
                 TextView itemTitle = NewsViewHolder.getViewById(this.itemView,R.id.item_title);
                 TextView subTitle = NewsViewHolder.getViewById(this.itemView,R.id.item_subtitle);
                 itemTitle.setText(newInfo.getAuthor_name());
