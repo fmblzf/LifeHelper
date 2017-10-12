@@ -30,4 +30,5 @@ dependencies {
     compile project(':fmblzf-network')
     compile project(':fmblzf-annotion')
     compile project(':fmblzf-picture')
+    compile project(':fmblzf-surfaceview')
 }

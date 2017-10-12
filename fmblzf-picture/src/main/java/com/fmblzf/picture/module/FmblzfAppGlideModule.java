@@ -22,6 +22,5 @@ public class FmblzfAppGlideModule extends AppGlideModule {
     public void registerComponents(Context context, Glide glide, Registry registry) {
         super.registerComponents(context, glide, registry);
 //        registry.replace()
-        SAXParserFactory
     }
 }
